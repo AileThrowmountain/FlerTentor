@@ -24,6 +24,7 @@ namespace ÖvningTenta
         public MainWindow()
         {
             InitializeComponent();
+            listBoxRealEstate.ItemsSource = null;
             listBoxRealEstate.ItemsSource = realEstate.GetList();
         }
 
@@ -51,6 +52,24 @@ namespace ÖvningTenta
             int priceKvm = price / size;
             return priceKvm;
 
+        }
+
+        private void btnFilter_Click(object sender, RoutedEventArgs e)
+        {
+            listBoxRealEstate.ItemsSource = null;
+            listBoxRealEstate.ItemsSource = realEstate.GetSuitableRealEstate(int.Parse(textBoxMin.Text), int.Parse(textBoxMax.Text));
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            RealEstate newRealEstate = new RealEstate()
+            { Address = textBoxAdress.Text, 
+              Rooms = int.Parse(textBoxRum.Text),
+              Area = int.Parse(textBoxArea.Text)
+            };
+            realEstate.AddRealEstate(newRealEstate);
+            listBoxRealEstate.ItemsSource = null;
+            listBoxRealEstate.ItemsSource = realEstate.GetList();
         }
     }
 }
