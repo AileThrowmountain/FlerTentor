@@ -20,9 +20,37 @@ namespace ÖvningTenta
     /// </summary>
     public partial class MainWindow : Window
     {
+        Broker realEstate = new Broker();
         public MainWindow()
         {
             InitializeComponent();
+            listBoxRealEstate.ItemsSource = realEstate.GetList();
+        }
+
+        private void btnBerakna_Click(object sender, RoutedEventArgs e)
+        {
+            
+            int price = int.Parse(textBoxSlutPris.Text);
+            string priceString = textBoxSlutPris.Text;
+            
+            
+            if (priceString.Length <= 4)
+            {
+                price = price * 1000;
+
+            }
+
+            textBoxSlutPris.Text = ($"{price:C0} ");
+
+            labelKrKvm.Content = ($"{BeräknaKvmPris(price):C0} kr/kvm");
+        }
+
+        public int BeräknaKvmPris(int price)
+        {
+            int size = 57;
+            int priceKvm = price / size;
+            return priceKvm;
+
         }
     }
 }
