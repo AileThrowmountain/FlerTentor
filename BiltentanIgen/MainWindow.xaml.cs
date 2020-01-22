@@ -24,5 +24,16 @@ namespace BiltentanIgen
         {
             InitializeComponent();
         }
+
+        private void buttonCalc_Click(object sender, RoutedEventArgs e)
+        {
+            int totalVikt = int.Parse(textBoxSlapVikt.Text);
+
+            int slapviktB = 3500 - totalVikt;
+            int slapviktBUtokad = 4250 - totalVikt;
+
+            labelB.Content = ($"{slapviktB} kg");
+            labelBUtokad.Content = ($"{slapviktBUtokad} kg");
+        }
     }
 }
