@@ -35,5 +35,24 @@ namespace BiltentanIgen
             labelB.Content = ($"{slapviktB} kg");
             labelBUtokad.Content = ($"{slapviktBUtokad} kg");
         }
+
+        public bool HasCorrectLength(string regNr)
+        {
+           if(regNr.Length == 7)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void buttonLangd_Click(object sender, RoutedEventArgs e)
+        {
+            if (HasCorrectLength(textBoxLangd.Text) == false)
+            {
+                MessageBox.Show("Skylten har ett felaktigt antal tecken.");
+            }
+            
+
+        }
     }
 }
