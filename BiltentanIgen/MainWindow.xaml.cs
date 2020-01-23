@@ -59,7 +59,7 @@ namespace BiltentanIgen
         {
             labelPlateGenerator.Content = ($"{GetRandomLetters()} {GetRandomNumber()}");
 
-            if 
+             
 
 
         }

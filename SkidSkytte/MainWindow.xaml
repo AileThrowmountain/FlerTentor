@@ -1,0 +1,27 @@
+﻿<Window x:Class="SkidSkytte.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkidSkytte"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBoxFirstName" HorizontalAlignment="Left" Height="23" Margin="33,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxLastName" HorizontalAlignment="Left" Height="23" Margin="33,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelFN" Content="Förnamn" HorizontalAlignment="Left" Margin="33,27,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelEN" Content="Efternamn" HorizontalAlignment="Left" Margin="33,87,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Anmäl till tävling" HorizontalAlignment="Left" Margin="33,167,0,0" VerticalAlignment="Top" Width="120" Height="64" Click="button_Click"/>
+        <ListBox x:Name="listBoxCompetetors" HorizontalAlignment="Left" Height="178" Margin="209,53,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="labelSignedUp" Content="Anmälda deltagare" HorizontalAlignment="Left" Margin="209,27,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="goal1" Content="" HorizontalAlignment="Left" Margin="33,304,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="goal2" Content="" HorizontalAlignment="Left" Margin="53,304,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="goal3" Content="" HorizontalAlignment="Left" Margin="73,304,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="goal4" Content="" HorizontalAlignment="Left" Margin="98,304,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="goal5" Content="" HorizontalAlignment="Left" Margin="118,304,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelShoot" Content="Registrera träffar" HorizontalAlignment="Left" Margin="35,273,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonOK" Content="OK" HorizontalAlignment="Left" Margin="43,335,0,0" VerticalAlignment="Top" Width="75" Click="buttonOK_Click"/>
+        <Button x:Name="buttonLänder" Content="Hur många länder" HorizontalAlignment="Left" Margin="478,152,0,0" VerticalAlignment="Top" Width="190" Click="buttonLänder_Click"/>
+
+    </Grid>
+</Window>
