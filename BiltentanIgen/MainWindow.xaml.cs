@@ -54,5 +54,36 @@ namespace BiltentanIgen
             
 
         }
+        
+        private void buttonPlatespotting_Click(object sender, RoutedEventArgs e)
+        {
+            labelPlateGenerator.Content = ($"{GetRandomLetters()} {GetRandomNumber()}");
+
+            if 
+
+
+        }
+        private static string GetRandomLetters()
+        {
+            Random r = new Random();
+            string okLetters = "ABCDEFGHJKLMNPRSTUWXYX";
+            string letters = "";
+            for (int i = 0; i < 3; i++)
+            {
+                int index = r.Next(okLetters.Length);
+                letters += okLetters[index].ToString();
+            }
+            return letters;
+        }
+        private static int GetRandomNumber()
+        {
+
+            Random n = new Random();
+            int randomNumbers = n.Next(1000);
+  
+  
+            return randomNumbers;
+        }
+
     }
 }
