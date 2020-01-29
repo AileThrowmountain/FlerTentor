@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiltentanIgen", "BiltentanI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkidSkytte", "SkidSkytte\SkidSkytte.csproj", "{66C086A1-03F6-4D29-AC17-96EF8BD48B2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingTenta", "RingTenta\RingTenta.csproj", "{58388993-BB28-4621-8CDA-9D85E8DDE561}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{66C086A1-03F6-4D29-AC17-96EF8BD48B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66C086A1-03F6-4D29-AC17-96EF8BD48B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66C086A1-03F6-4D29-AC17-96EF8BD48B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58388993-BB28-4621-8CDA-9D85E8DDE561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58388993-BB28-4621-8CDA-9D85E8DDE561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58388993-BB28-4621-8CDA-9D85E8DDE561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58388993-BB28-4621-8CDA-9D85E8DDE561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
